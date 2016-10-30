@@ -3,38 +3,7 @@
 	<head>
 		<meta charset=utf-8>
 		<title>My first Three.js app</title>
-		<style>
-			body {
-				margin: 0px;
-				background-color: #BDB76B;	
-				overflow: hidden;
-			}
-				#score {
-				font-size: 75px;
-				margin-top: 12px;
-				font-style: bold;
-				text-align: center;
-				color: #141414;
-			}
-				#container {
-				width: 750px;
-				height: 750px;
-				border: 3px solid white;
-				background-color: #141414;
-				margin-left: auto;
-    			margin-right: auto;
-				margin-top: 12px;
-				cursor: none;
-
-			}
-				#bestScore {
-				font-size: 40px;
-				margin-top: 12px;
-				font-style: bold;
-				text-align: center;
-				color: #141414;
-			}
-		</style>
+		<link rel="stylesheet" type="text/css" href="main.css">
 	</head>
 	<body>
 		<div id="score">0</div>
@@ -58,7 +27,7 @@
 			var gemRange = 500
 
 			init();
-			animate(); 
+			animate();
 
 
 			function init() {
@@ -102,7 +71,7 @@
 			scene.add ( gem )
 
 			//	player
-			
+
 			player = new THREE.Mesh( geometry, new THREE.MeshBasicMaterial() )
 			scene.add ( player )
 
